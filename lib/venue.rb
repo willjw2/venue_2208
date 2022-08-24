@@ -24,6 +24,8 @@ class Venue
   end
 
   def kick_out
-    @patrons.pop()
+    until @patrons.length() <= @capacity
+      @patrons.pop()
+    end
   end
 end
