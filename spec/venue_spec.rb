@@ -50,6 +50,7 @@ describe Venue do
   # Iteration 3
 
   describe '#over_capacity' do
+    #is it better to write two tests here?
     it 'can determine if over capacity' do
       venue = Venue.new('Bluebird', 4)
       venue.add_patron('Mike')
