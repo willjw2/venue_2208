@@ -76,5 +76,4 @@ describe Venue do
       expect(venue.over_capacity?).to eq false
     end
   end
-
 end
