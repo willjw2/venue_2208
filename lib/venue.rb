@@ -10,8 +10,16 @@ class Venue
   def add_patron(patron)
     @patrons << patron
   end
-  
+
   def yell_at_patrons
     @patrons.map(&:upcase)
+  end
+
+  def over_capacity?
+    if @patrons.length() > @capacity
+      return true
+    else
+      return false
+    end
   end
 end
